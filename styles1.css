@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Font styles */
+body, h1, h2, h3, h4, h5, h6,p {
+  font-family: "lato", sans-serif;
+  text-align: center;
+}
+
+/* Body and HTML styles */
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Image styles */
+img {
+  border-radius: inherit;
+}
+
+/* Navbar styles */
+nav {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+  background: rgb(240, 226, 218);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 128, 0);
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+
+/* CEO Image styles */
+.ceoimg {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+/* Cards Container styles */
+.cards-container {
+  margin: auto;
+  padding-block: 120px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+ 
+}
+
+/* Motors Card styles */
+
+.motors-card {
+  text-align: center;
+  background-color: var(--primary-back);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 2%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  
+}
+
+/* Cars Section styles */
+.cars-section {
+  background-color: var(--primary-back);
+  height: fit-content;
+}
+
+.cars-section h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.cars-section p {
+  margin-top: 0;
+  text-align: center;
+  padding: 40px 80px 0px 80px;
+}
+/* food styles */
+.foods-section{
+  background-color: var(--primary-back);
+}
+.foods-card img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* Add or modify styles for the Foods Card to match Motors Card */
+.foods-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+.Baking-card,
+.meal-card,
+.mogodu-card {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-back);
+}
+.Baking-card img,
+.meal-card img,
+.mogodu-card img {
+  width: 100%;
+  height: auto;
+}
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: black;
+  color: white;
+  height: 10rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+/* About Section styles */
+.about-container {
+  width: 100%;
+  padding: 70px 70px;
+  text-align: center;
+  background-color: var(--primary-back);
+  
+  margin: 0;
+}
+
+.web-offers {
+  flex: 50% 50%;
+  margin: 5px;
+}
+
+/* Pricing Section styles */
+
+.price-card {
+  text-align: center;
+  background-color: var(--tertiary-back);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.price-card h2 {
+  color: #333;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #009688;
+  margin: 10px 0;
+}
+.pricing{
+background-color: var(--secondary-back);
+padding: 10px 300px 10px 300px;
+
+height: fit-content;}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #967a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00796b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+.w3-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact {
+  background-color: var(--tertiary-back);
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #967a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00796b;
+}
+
+/* Primary Button styles */
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+#back-to-top {
+  display:contents;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

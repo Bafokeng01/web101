@@ -1,0 +1,360 @@
+:root{
+  --primary-back:rgb(235, 235, 235);
+  --secondary-back: rgb(241, 229, 229);
+  --tertiary-back: rgb(255, 240, 240);
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+
+  .car-card{
+    padding: 20px;
+  }
+  .cards-container{
+    display: block;
+    padding: 70px;
+    
+  }
+  .food-container {
+    display:block;
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+    
+  }
+  .foods-section p{
+    text-align: center;
+  }
+  .price-card{
+    padding:30px
+  }
+  .pricing{
+    display:block;
+    width: 100%;
+    padding: 10px 70px 10px 70px;
+    text-align: center;
+  }
+  .foods-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Baking-card,
+  .meal-card,
+  .mogodu-card {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+
+
+/* Media query for tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Font styles */
+body, h1, h2, h3, h4, h5, h6,p {
+  font-family: "lato", sans-serif;
+  text-align: center;
+}
+
+/* Body and HTML styles */
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Image styles */
+img {
+  border-top-left-radius: inherit;
+  border-bottom-right-radius:0px ;
+  border-bottom-left-radius:0px ;
+}
+
+/* Navbar styles */
+.topnav {
+  background-color: rgb(0, 87, 72);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: var(--primary-back);
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* CEO Image styles */
+.ceoimg {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+/* Cards Container styles */
+.cards-container {
+  margin: auto;
+  padding: 140px;
+  display:block;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.car-card{
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Motors Card styles */
+
+.motors-card {
+  text-align: center;
+  background-color: var(--primary-back);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10%;
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border: 1px solid #ccc;
+  
+}
+
+/* Cars Section styles */
+.cars-section {
+  background-color: var(--primary-back);
+  height: fit-content;
+}
+
+.cars-section h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.cars-section p {
+  margin-top: 0;
+  text-align: center;
+  padding: 40px 80px 0px 80px;
+}
+/* food styles */
+.foods-section{
+  background-color: var(--primary-back);
+}
+.food-container{
+  flex: 1;
+  padding: 10px;
+  display:flex;
+  width: 100%;
+}
+.foods-card img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* Add or modify styles for the Foods Card to match Motors Card */
+.foods-card {
+  width: 100%;
+  flex: 1;
+
+}
+.Baking-card,
+.meal-card,
+.mogodu-card {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-back);
+}
+.Baking-card img,
+.meal-card img,
+.mogodu-card img {
+  width: 100%;
+  height: 285px;
+}
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: black;
+  color: white;
+  height: 10rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+/* About Section styles */
+.about-container {
+  width: 100%;
+  padding: 70px 70px;
+  text-align: center;
+  background-color: var(--primary-back);
+  
+  margin: 0;
+}
+
+.web-offers {
+  flex: 50% 50%;
+  margin: 5px;
+}
+
+/* Pricing Section styles */
+
+.price-card {
+  text-align: center;
+  background-color: var(--tertiary-back);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  
+}
+
+.price-card h2 {
+  color: #333;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #009688;
+  margin: 10px 0;
+}
+.pricing{
+background-color: var(--secondary-back);
+padding: 10px ;
+display: flex;
+height: fit-content;}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #967a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00796b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+.w3-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact {
+  background-color: var(--tertiary-back);
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #967a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00796b;
+}
+
+/* Primary Button styles */
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+}}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
